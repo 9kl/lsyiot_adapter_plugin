@@ -4,11 +4,11 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="lysiot_adpter_plugin",
+    name="lsyiot_adapter_plugin",
     version="1.0.0",
     author="fhp",
     author_email="chinafengheping@outlook.com",
-    description="为lysiot_adpter_hub提供适配器插件",
+    description="为lsyiot_adapter_hub提供适配器插件",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/9kl/lsyiot_adapter_plugin",

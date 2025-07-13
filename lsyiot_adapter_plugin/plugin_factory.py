@@ -1,10 +1,7 @@
-import logging
 import os
 import importlib
 import inspect
-from negotiation import AdapterNegotiation, AdapterABC, AdapterPluginError
-
-logger = logging.getLogger("hniot_connect_sl651")
+from lsyiot_adapter_plugin.negotiation import AdapterNegotiation, AdapterABC, AdapterPluginError
 
 
 class PluginFactory(object):

@@ -1,6 +1,6 @@
 # lsyiot_adapter_plugin
 
-一个用于 lysiot_adpter_hub 数据适配器的插件系统，支持动态加载和注册各种设备数据适配器。
+一个用于 lsyiot_adpter_hub 数据适配器的插件系统，支持动态加载和注册各种设备数据适配器。
 
 ## 项目简介
 
@@ -17,7 +17,7 @@
 ## 安装
 
 ```bash
-pip install lysiot_adpter_plugin
+pip install lsyiot_adpter_plugin
 ```
 
 ## 快速开始
@@ -35,7 +35,7 @@ import json
 from datetime import datetime
 from typing import Generator
 
-from lysiot_adpter_plugin.negotiation import AdapterABC, AdapterParseError
+from lsyiot_adapter_plugin.negotiation import AdapterABC, AdapterParseError
 
 
 class MonitorTiltAdapter(AdapterABC):
@@ -116,7 +116,7 @@ class MonitorTiltAdapter(AdapterABC):
 ### 2. 使用插件工厂加载适配器
 
 ```python
-from lysiot_adpter_plugin.plugin_factory import PluginFactory
+from lsyiot_adpter_plugin.plugin_factory import PluginFactory
 
 # 初始化插件工厂
 plugin_factory = PluginFactory("plugins")
