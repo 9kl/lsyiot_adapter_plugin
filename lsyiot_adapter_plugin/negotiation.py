@@ -32,7 +32,7 @@ class AdapterABC(metaclass=ABCMeta):
         pass
 
     @abstractmethod
-    def parse(self, msg, userdata=None) -> Generator[dict, None, None]:
+    def parse(self, msg: str, userdata=None) -> Generator[dict, None, None]:
         pass
 
 

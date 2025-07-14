@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="lsyiot_adapter_plugin",
-    version="1.0.0",
+    version="1.0.1",
     author="fhp",
     author_email="chinafengheping@outlook.com",
     description="为lsyiot_adapter_hub提供适配器插件",

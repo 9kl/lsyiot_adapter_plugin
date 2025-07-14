@@ -9,13 +9,11 @@ class PluginFactory(object):
         self.negotiation = AdapterNegotiation()
         self.plugins_dir = plugins_dir
 
-        if not os.path.exists(plugins_dir):
-            raise AdapterPluginError(f"Plugins directory '{plugins_dir}' does not exist.")
-
     def load_adapters(self):
-        """
-        动态加载plugins目录下的所有适配器
-        """
+        """通过插件工厂的load_adapters方法，动态加载plugins目录下的所有适配器"""
+
+        if not os.path.exists(self.plugins_dir):
+            raise AdapterPluginError(f"Plugins directory '{self.plugins_dir}' does not exist.")
 
         # 遍历plugins目录下的所有子目录
         for plugin_name in os.listdir(self.plugins_dir):
